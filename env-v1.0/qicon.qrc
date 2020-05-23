@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qicon/beautgir.jpg</file>
+        <file>qicon/narrow.png</file>
+    </qresource>
+</RCC>
