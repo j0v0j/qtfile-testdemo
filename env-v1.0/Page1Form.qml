@@ -4,7 +4,10 @@ import QtQuick.Controls 2.2
 Page {
     width: 600
     height: 400
+    background: Item {
 
+
+    }
     header: Label {
         text: qsTr("Page 1")
         font.pixelSize: Qt.application.font.pixelSize * 2

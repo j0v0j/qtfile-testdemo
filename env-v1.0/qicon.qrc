@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file>qicon/beautgir.jpg</file>
         <file>qicon/narrow.png</file>
+        <file>qicon/bg.jpg</file>
+        <file>qicon/G_MG.ico</file>
+        <file>qicon/R_MG.ico</file>
     </qresource>
 </RCC>

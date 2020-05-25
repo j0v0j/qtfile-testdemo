@@ -6,5 +6,9 @@
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>PageMain.qml</file>
+        <file>FormSlider.qml</file>
+        <file>MyQua.qml</file>
+        <file>TemperatureeGua.qml</file>
+        <file>HumidityGua.qml</file>
     </qresource>
 </RCC>

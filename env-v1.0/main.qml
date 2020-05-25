@@ -8,6 +8,11 @@ ApplicationWindow {
     height:480
     property bool f : true
     title: qsTr("设施园艺研究中心")
+    background: Image {
+        id: name
+        anchors.fill: parent
+        source: "qrc:/qicon/bg.jpg"
+    }
 
     Label {
         id: label
