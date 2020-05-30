@@ -10,5 +10,8 @@
         <file>MyQua.qml</file>
         <file>TemperatureeGua.qml</file>
         <file>HumidityGua.qml</file>
+        <file>TerperaTure.qml</file>
+        <file>ShowNum.qml</file>
+        <file>WorkingStatus.qml</file>
     </qresource>
 </RCC>

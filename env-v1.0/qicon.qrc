@@ -5,5 +5,9 @@
         <file>qicon/bg.jpg</file>
         <file>qicon/G_MG.ico</file>
         <file>qicon/R_MG.ico</file>
+        <file>qicon/sun.png</file>
+        <file>qicon/sun.ico</file>
+        <file>qicon/honghuang.ico</file>
+        <file>qicon/lvhaug.ico</file>
     </qresource>
 </RCC>

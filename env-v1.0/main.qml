@@ -3,10 +3,10 @@ import QtQuick.Controls 2.2
 
 ApplicationWindow {
     id: window
+    property  bool f:true
     visible: true
     width:640
     height:480
-    property bool f : true
     title: qsTr("设施园艺研究中心")
     background: Image {
         id: name
@@ -18,12 +18,13 @@ ApplicationWindow {
         id: label
         x: 95
         text: qsTr("温室环境控制系统")
+
         anchors.horizontalCenter: parent.horizontalCenter
         textFormat: Text.PlainText
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
         styleColor: "#e31717"
-        font.pointSize: 33
+        font.pointSize: parent.width/25
         anchors.top: parent.top
         anchors.topMargin: 9
         MouseArea {
@@ -54,19 +55,33 @@ ApplicationWindow {
         x: 0
         y: 40
         width: window.width
-        font.pointSize: 20
+        height: window.height/8
+        font.pixelSize:parent.width/20
         anchors.top: label.bottom
         anchors.topMargin: 10
         currentIndex: swipeView.currentIndex
 
+
         TabButton {
-            text: qsTr("Page 1")
+            height: window.height/8
+            text: qsTr("主页")
+            font.pixelSize:parent.width/20
+
         }
         TabButton {
-            text: qsTr("Page 2")
+            height: window.height/8
+            text: qsTr("水肥机")
+            font.pixelSize:parent.width/20
         }
         TabButton {
-            text: qsTr("my page")
+            height: window.height/8
+            text: qsTr("温度管理")
+            font.pixelSize:parent.width/20
+        }
+        TabButton {
+            height: window.height/8
+            text: qsTr("湿度管理")
+            font.pixelSize:parent.width/20
         }
 
 
@@ -86,22 +101,60 @@ ApplicationWindow {
 
         currentIndex: tabBar.currentIndex
 
+        PageMain{
+        }
         Page1Form {
 
         }
 
         Page2Form {
-        }
-
-        PageMain{
-
 
         }
+
     }
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
