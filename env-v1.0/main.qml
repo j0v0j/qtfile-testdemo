@@ -13,7 +13,7 @@ ApplicationWindow {
         anchors.fill: parent
         source: "qrc:/qicon/bg.jpg"
     }
-
+    signal slidervalue()
     Label {
         id: label
         x: 95
@@ -27,12 +27,12 @@ ApplicationWindow {
         font.pointSize: parent.width/25
         anchors.top: parent.top
         anchors.topMargin: 9
+
         MouseArea {
             id: mouseArea
             anchors.fill: parent
-
+            onPressed: slidervalue()
             onClicked: {
-
                 if(window.f){
 
                     window.visibility="Maximized"
