@@ -42,29 +42,29 @@ Item {
                     anchors.fill: parent
                     width:element.width
                     height: element.height
-                    onPaint:{
-                        var r=(circularGauge.width<circularGauge.height ? circularGauge.width/2:circularGauge.height/2)
-                        var rx=element1.width/2
-                        var ry=element1.height/2
-                        var ctx=getContext("2d")
-                        ctx.beginPath()
+//                    onPaint:{
+//                        var r=(circularGauge.width<circularGauge.height ? circularGauge.width/2:circularGauge.height/2)
+//                        var rx=element1.width/2
+//                        var ry=element1.height/2
+//                        var ctx=getContext("2d")
+//                        ctx.beginPath()
 
 
-                        var gradient=context.createLinearGradient(50,50,150,170);
+//                        var gradient=context.createLinearGradient(50,50,150,170);
 
-                        gradient.addColorStop(0,"white");
-                        gradient.addColorStop(0.5,"black");
-                        gradient.addColorStop(1,"white");
-                        ctx.fillStyle = gradient
-                        ctx.strokeStyle = gradient
+//                        gradient.addColorStop(0,"white");
+//                        gradient.addColorStop(0.7,"yellow");
+//                        gradient.addColorStop(2,"white");
+//                        ctx.fillStyle = gradient
+//                        ctx.strokeStyle = gradient
 
-                        ctx.lineWidth = 2
-                        ctx.arc(rx,ry,r*4/6,0, (Math.PI*2), false);
-                        ctx.fill();
-                        ctx.stroke()
+//                        ctx.lineWidth = 2
+//                        ctx.arc(rx,ry,r*4/6,0, (Math.PI*2), false);
+//                        ctx.fill();
+//                        ctx.stroke()
 
 
-                    }
+//                    }
 
 
 
@@ -94,10 +94,12 @@ Item {
         y: 206
         width: 55
         height: 27
+        color: "#e5e3e3"
         anchors.horizontalCenterOffset: 0
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         text: circularGauge.value+"%"
+
         anchors.bottomMargin: parent.height/5
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
@@ -210,8 +212,10 @@ Item {
 
 
 
+
+
 /*##^## Designer {
-    D{i:6;anchors_height:47;anchors_width:200;anchors_x:0;anchors_y:206}D{i:4;anchors_x:140;anchors_y:8}
+    D{i:4;anchors_x:140;anchors_y:8}D{i:6;anchors_height:47;anchors_width:200;anchors_x:0;anchors_y:206}
 D{i:1;anchors_height:214;anchors_x:228;anchors_y:170}
 }
  ##^##*/
