@@ -3,6 +3,7 @@ import QtQuick.Controls 2.2
 
 Row {
     id: row
+    property bool flag1: false
     Rectangle{
         id: rectangle//序号
         width:parent.width/4
@@ -14,20 +15,17 @@ Row {
             font.pointSize: parent.height/8
             background:Item {
 
-
             }
             anchors.fill: parent
             onReleased: {
-                grid.flag1=!grid.flag1
-                if(grid.flag1){
+                row.flag1=!row.flag1
+                if(row.flag1){
                     status1.text="激活"
                 }else{
                     status1.text="失效"
 
                 }
-                busyIndicator1.running=grid.flag1
-
-
+                busyIndicator1.running=row.flag1
             }
         }
         BusyIndicator {

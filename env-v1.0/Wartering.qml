@@ -36,14 +36,6 @@ Page {
 
     Grid {
         id: grid
-        property bool flag1: false
-        property bool flag2: false
-        property bool flag3: false
-        property bool flag4: false
-        property bool flag5: false
-        property bool flag6: false
-        property bool flag7: false
-        property bool flag8: false
         x: 0
         y: 55
         columns: 2

@@ -144,7 +144,7 @@ ApplicationWindow {
 
         }
 
-        Page2Form {
+        TemperatureManager{
 
         }
 

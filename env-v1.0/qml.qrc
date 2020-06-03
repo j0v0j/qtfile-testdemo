@@ -15,5 +15,8 @@
         <file>WorkingStatus.qml</file>
         <file>Threenum.qml</file>
         <file>WorkingTime.qml</file>
+        <file>TemperatureManager.qml</file>
+        <file>TemperatureModel.qml</file>
+        <file>TemperatureTitle.qml</file>
     </qresource>
 </RCC>
