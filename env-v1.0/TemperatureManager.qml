@@ -45,7 +45,7 @@ Page {
         anchors.bottomMargin: 0
         property int recwidth : pageid.width/6
         property int recheight : grid.height/4
-        TemperatureModel{
+        TemperatureTitle{
             width:grid.recwidth
             height:grid.recheight*4
         }
@@ -76,6 +76,8 @@ Page {
 
 
 }
+
+
 
 
 
